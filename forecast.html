@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecast Weather</title>
+
+  <head>
+      <!-- bootstrap.css, style.css and google fonts -->
+       <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  </head>
+
+<body>
+        <!-- LAYOUT WRAPPER  for sticky footer section-->
+  <div class="d-flex flex-column min-vh-100">
+    
+  
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fw-bold fst-italic fs-5" 
+     style="background: linear-gradient(to right, #fe554f, #189db8)">
+  
+      <div class="container-fluid">
+        <!-- Brand -->
+          <a class="navbar-brand" href="index.html">
+              <h1 class="text-center">
+            <span class="text-body-primary text-white">AkWeather</span>
+            </h1>
+          </a>
+                      <!-- Humburger Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+              <!-- LINKS -->
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
+            
+                <!-- 1st Link -->
+                <li class="nav-item">
+                  <a class="nav-link active text-dark-50" aria-current="page" href="index.html">Home</a>
+                  </li>
+
+                  <!-- 2nd Link -->
+                  <li class="nav-item">
+                  <a class="nav-link" href="forecast.html">Forecast</a>
+                  </li>
+               
+                  <!-- 3rd Link -->
+                  <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                  </li>
+              </ul>
+                
+        <!-- Seach Button -->
+         <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="City" aria-label="Search"/>
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+        </div>
+      
+    </div>
+    </nav>  
+    
+    <!--BANNER -->
+     <img class = "img-fluid w-100" src="images/final-image.jpg" alt="Weather Hero" >
+
+    <main class="flex-fill">
+
+      <!-- TABLE -->
+      <div class="container my-5">
+        <div class="table-responsive">
+          <table class="table table-striped table-hover table-bordered text-center align-middle fs-5 caption-top"
+                 style="background-color: rgb(110,175,175)">
+            <caption class="fs-4 fw-bold text-dark text-center">
+              <span class="bg-info px-2 py-1 rounded d-inline-block">Weather Forecast</span>
+            </caption>
+            
+            <thead class="table-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Date</th>
+                <th scope="col">Location</th>
+                <th scope="col">Temp (°F)</th>
+                <th scope="col">Condition</th>
+              </tr>
+            </thead>
+            
+            <tbody>
+              <!-- 1st row -->
+              <tr class="table-info">
+                <th scope="row">1</th>
+                <td>08/20/2025</td>
+                <td>New York, NY</td>
+                <td>82°</td>
+                <td>Sunny</td>
+              </tr>
+            
+              <!-- 2nd row -->
+              <tr>
+                <th scope="row">2</th>
+                <td>08/20/2025</td>
+                <td>Lincoln, NE</td>
+                <td>95°</td>
+                <td>Hot & Dry</td>
+              </tr>
+            
+              <!-- 3rd row -->
+              <tr class="table-info">
+                <th scope="row">3</th>
+                <td>08/20/2025</td>
+                <td>Seattle, WA</td>
+                <td>78°</td>
+                <td>Partly Cloudy</td>
+              </tr>
+            
+              <!-- 4th row -->
+              <tr>
+                <th scope="row">4</th>
+                <td>08/20/2025</td>
+                <td>Miami, FL</td>
+                <td>88°</td>
+                <td>Rain Showers</td>
+              </tr>
+
+            <!-- 5th row -->
+              <tr class="table-info">
+                <th scope="row">5</th>
+                <td>08/20/2025</td>
+                <td>Chicago, IL</td>
+                <td>70°</td>
+                <td>Cloudy</td>
+              </tr>
+            
+            </tbody>
+            
+            <tfoot>
+              <tr>
+                <td colspan="5" class="text-center fw-bold"> Data last updated: 08/20/2025 </td>
+             </tr>
+            </tfoot>
+         
+          </table>
+        
+        </div>
+      </div>
+
+      <!--Go Home button -->
+      <div class="container text-center mb-5">
+        <a href="index.html" class="btn btn-primary btn-lg">Go to Home</a>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="mt-auto pt-3" style="background-color: rgb(110, 175, 175);">
+      <div class="text-center p-2">
+        <h5>Weather updates brought to you by Akeel Salman 2025</h5>
+      </div>
+    </footer>
+    
+  </div>
+
+          
+
+        <!-- SCRIPT  -->
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+                 
+    <!-- bootstrap.css, style.css and google fonts -->
+       <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+   
+</head>
+
+<body>
+
+ 
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fw-bold fst-italic fs-5" 
+     style="background: linear-gradient(to right, #fe554f, #189db8)">
+  
+      <div class="container-fluid">
+        
+          <!-- Brand -->
+          <a class="navbar-brand" href="index.html">
+              <h1 class="text-center">
+            <span class="text-body-primary text-white">AkWeather</span>
+            </h1>
+          </a>
+                      <!-- Humburger Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+              <!-- LINKS -->
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
+            
+                <!-- 1st Link -->
+                <li class="nav-item">
+                  <a class="nav-link active text-dark-50" aria-current="page" href="index.html">Home</a>
+                  </li>
+
+                  <!-- 2nd Link -->
+                  <li class="nav-item">
+                  <a class="nav-link" href="forecast.html">Forecast</a>
+                  </li>
+               
+                  <!-- 3rd Link -->
+                  <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                  </li>
+              </ul>
+                
+        <!-- Seach Button -->
+         <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="City" aria-label="Search"/>
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+        </div>
+      
+    </div>
+    </nav>  
+    
+    <!--BANNER -->
+     <img class = "img-fluid w-100" src="images/final-image.jpg" alt="Weather Hero" >
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <div class="container py-5"> 
+
+    <!-- About Us -->
+    <div class="text-center mb-5">
+      <h1 class="fw-bold display-5 border border-info border-5 opacity-50">About Us</h1>
+    </div>
+
+    <!-- Our Mission -->
+    <div class="mb-4">
+      <h2 class="fw-bold bg-info d-inline">Our Mission</h2>
+      <p class="fs-3">
+        At AkWeather®, our mission is to provide accurate and easy-to-read weather information for everyone.
+        We help you plan your day, stay safe, and be prepared for any weather conditions.
+      </p>
+    </div>
+    <hr class="border border-info border-5 opacity-70">
+
+    <!-- How It Works -->
+    <div class="mb-4">
+      <h2 class="fw-bold bg-info d-inline">How It Works</h2>
+      <p class="fs-3">
+        Simply enter your city in the search bar and get real-time weather updates. View hourly and weekly forecasts, 
+        check humidity, wind speed, and temperature, all in a clear and user-friendly interface.
+      </p>
+    </div>
+    <hr class="border border-info border-5 opacity-70">
+
+    <!-- Features -->
+    <div class="mb-4">
+      <h2 class="fw-bold bg-info d-inline">Features</h2>
+      <ul class="fs-4 ms-3">
+        <li class="mb-2">Real-time weather updates</li>
+        <li class="mb-2">Hourly and weekly forecasts</li>
+        <li class="mb-2">Humidity, wind, and temperature details</li>
+        <li class="mb-2">Mobile-friendly and responsive design</li>
+      </ul>
+    </div>
+    <hr class="border border-info border-5 opacity-70">
+
+    <!-- Subscribe + Form -->
+    <h2 class="bg-info d-inline">Subscribe for Weather Updates</h2>
+<form>
+  <!-- Full Name -->
+        <div class="mb-3">
+          <label for="fullName" class="form-label fs-4">Full Name</label>
+          <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+        </div>
+
+        <!-- Email -->
+        <div class="mb-3">
+          <label for="email" class="form-label fs-4">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+
+        <!-- Phone Number -->
+        <div class="mb-3">
+          <label for="phone" class="form-label fs-4">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+        </div>
+
+        <!-- City -->
+        <div class="mb-3">
+          <label for="city" class="form-label fs-4">City</label>
+          <input type="text" class="form-control" id="city" placeholder="Enter your city">
+        </div>
+
+        <!-- Subscription Type -->
+        <div class="mb-3">
+          <label for="subscription" class="form-label fs-4">Subscription Type</label>
+          <select class="form-select" id="subscription">
+            <option selected>Select your option</option>
+            <option value="daily">Daily Updates</option>
+            <option value="weekly">Weekly Updates</option>
+            <option value="monthly">2 Weeks Updates</option>
+          </select>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary fs-4">Submit</button>
+</form>
+
+
+  </div>
+
+  <!-- Go Home Button -->
+  <div class="container my-5 text-center">
+    <a href="index.html" class="btn btn-primary btn-lg">Go to Home</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="mt-auto pt-3" style="background-color: rgb(110, 175, 175);">
+    <div class="text-center p-2">
+      <h5>Weather updates brought to you by Akeel Salman 2025</h5>
+    </div>
+  </footer>
+
+        <!-- SCRIPT  -->
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+
+   
